@@ -40,6 +40,11 @@ Route::get("opcion2", function(){
 })-> name("b");
 
 
-Route::get("nosotros", function(){
-    return view("nosotros");
-});
+Route::get("nosotros/{nombre?}", function($nombre = null){
+
+
+    //simulando conexion base de datos enviando datos  a las vistas, ojo importante.
+    $equipo = [ "jelipe", "johan", "jaimico"];
+    //return view("nosotros",["equipo"=>$equipo]);
+    return view("nosotros", compact("equipo", "nombre"));
+})-> name("nos");

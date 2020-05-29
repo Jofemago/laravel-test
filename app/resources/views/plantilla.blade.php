@@ -14,6 +14,7 @@
     <div class="container">
         <a href="{{route('a')}}" class="btn btn-primary">Opcion1</a>
         <a href="{{route('b')}}" class="btn btn-primary">Opcion2</a>
+        <a href="{{route('nos')}}" class="btn btn-primary">nostros</a>
     </div>
     <div class="container">
         @yield("seccion")  
